@@ -37,7 +37,7 @@ function EditTodo() {
     try {
       const docRef = doc(db, "todo", id);
       await updateDoc(docRef, todo);
-      alert("Todo updated successfully!");
+      // alert("Todo updated successfully!");
       navigate("/todos");
     } catch (error) {
       console.error("Error updating document: ", error);
@@ -48,14 +48,14 @@ function EditTodo() {
 
   return (
     <div className="container mt-5">
-      <h2>Edit Todo</h2>
+      <h2>Edit Treatment</h2>
       <form className="mx-auto" style={{ maxWidth: "500px" }}>
         <div className="form-group mb-3">
-          <label>Todo Task</label>
+          <label>Treatment Task</label>
           <input
             type="text"
             className="form-control"
-            name="Todo Task"
+            name="Treatment Task"
             value={todo["Todo Task"]}
             onChange={handleChange}
             required

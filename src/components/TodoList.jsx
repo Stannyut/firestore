@@ -31,7 +31,7 @@ function TodoList() {
     try {
       await deleteDoc(doc(db, "todo", id));
       setTodos(todos.filter((todo) => todo.id !== id)); // Update UI after delete
-      alert("Todo deleted successfully!");
+      // alert("Todo deleted successfully!");
     } catch (error) {
       console.error("Error deleting document: ", error);
     }
@@ -43,7 +43,7 @@ function TodoList() {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">Todo List</h2>
+      <h2 className="text-center mb-4">Treatment</h2>
       <div className="row">
         {todos.map((todo) => (
           <div className="col-md-4 mb-4" key={todo.id}>

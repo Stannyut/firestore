@@ -37,7 +37,7 @@ function TodoForm() {
         "Daily Reminder": newTodo.dailyReminder,
         Notes: newTodo.notes,
       });
-      alert("Todo added successfully!");
+      // alert("Todo added successfully!");
 
       // Navigate to the TodoList page after adding the todo
       navigate("/todos");
@@ -48,10 +48,10 @@ function TodoForm() {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">Add New Todo</h2>
+      <h2 className="text-center mb-4">Add New Treatment</h2>
       <form className="mx-auto" style={{ maxWidth: "500px" }}>
         <div className="form-group mb-3">
-          <label>Todo Task</label>
+          <label>Treatment Task</label>
           <input
             type="text"
             className="form-control"
